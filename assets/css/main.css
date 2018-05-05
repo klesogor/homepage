@@ -1,13 +1,4 @@
 
-@font-face {
-    font-family: base;
-    src: url("assets/fonts/palanquindark-regular.ttf");
-}
-
-@font-face {
-    font-family: bold;
-    src: url("assets/fonts/palanquin-bold.ttf");
-}
 body
 {
     font-size: 18px;
@@ -106,7 +97,7 @@ body
 .timeline-block-image
 {
     float:left;
-    background-image: url('/assets/img/tl.png');
+    background-image: url('../img/tl.png');
     background-position: center top;
     background-repeat: no-repeat;
     min-height: 100px;
@@ -150,8 +141,8 @@ body
 .addit-skill
 {
     border: none;
-    margin-left: -10px;
-    padding:5px 10px 5px 5px;
+    margin-left: -20px;
+    padding:5px 10px 5px 20px;
     border-right:none;
     border-left: #fdfdfd dashed 2px;
 }
@@ -164,6 +155,7 @@ body
     }
     .addit-skill
     {
+        padding:5px 10px 5px 5px;
         margin-left: 0px;
         border: none;
     }
