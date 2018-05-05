@@ -97,7 +97,7 @@ body
 .timeline-block-image
 {
     float:left;
-    background-image: url('assets/img/tl.png');
+    background-image: url('../img/tl.png');
     background-position: center top;
     background-repeat: no-repeat;
     min-height: 100px;
