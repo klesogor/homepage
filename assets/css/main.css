@@ -143,12 +143,33 @@ body
     padding: 5px;
 }
 
+.main-skill
+{
+    padding:5px 20px 5px 5px;
+    border-right: #fdfdfd dashed 2px;
+    margin-right: -10px;
+}
+.addit-skill
+{
+    border: none;
+    padding:5px 10px 5px 5px;
+    border-right:none;
+    padding-bottom:20px; 
+}
 
 @media (max-width: 768px) 
 {
     #cv-head
     {
         text-align: center;
+    }
+    .main-skill
+    {
+        border: none;
+    }
+    .addit-skill
+    {
+        margin-right: 0px;
     }
 }
 @media (max-width: 452px) 
