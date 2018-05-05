@@ -146,15 +146,14 @@ body
 .main-skill
 {
     padding:5px 20px 5px 5px;
-    border-right: #fdfdfd dashed 2px;
-    margin-right: -10px;
 }
 .addit-skill
 {
     border: none;
+    margin-left: -10px;
     padding:5px 10px 5px 5px;
     border-right:none;
-    padding-bottom:20px; 
+    border-left: #fdfdfd dashed 2px;
 }
 
 @media (max-width: 768px) 
@@ -163,13 +162,10 @@ body
     {
         text-align: center;
     }
-    .main-skill
-    {
-        border: none;
-    }
     .addit-skill
     {
-        margin-right: 0px;
+        margin-left: 0px;
+        border: none;
     }
 }
 @media (max-width: 452px) 
