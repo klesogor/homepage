@@ -90,6 +90,48 @@ body
 {
     min-height:60px;
 }
+.timeline
+{
+    margin-left:5px;
+    box-sizing: border-box;
+}
+.timeline-block
+{
+    float:left;
+    padding-left:3px; 
+    max-width:90%;
+}
+.timeline-block-image
+{
+    float:left;
+    background-image: url('/assets/img/tl.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-height: 100px;
+    min-width:40px;
+    background-size: cover;
+}
+.header-main{
+    font-style: italic;
+    font-weight: 600;
+}
+.text-main
+{
+    font-style: italic;
+}
+.timeline-row
+{
+    width: 100%;
+    overflow: hidden;
+    padding:0px;
+    margin: 0px;  
+}
+.timeline-row:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
 
 
 @media (max-width: 768px) 
@@ -97,5 +139,12 @@ body
     #cv-head
     {
         text-align: center;
+    }
+}
+@media (max-width: 452px) 
+{
+   .timeline-block-image
+    {
+        display:none;
     }
 }
