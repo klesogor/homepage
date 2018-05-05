@@ -1,0 +1,79 @@
+
+@font-face {
+    font-family: base;
+    src: url("assets/fonts/palanquindark-regular.ttf");
+}
+
+@font-face {
+    font-family: bold;
+    src: url("assets/fonts/palanquin-bold.ttf");
+}
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: #e6e6ee;
+}
+
+.photo-wrap
+{
+    max-width: 250px;
+    max-height: 250px;
+    margin: auto;
+}
+#cv-head
+{
+    width: 80%;
+    text-align: left;
+    bottom:0px;
+    margin:30px auto 30px auto;
+    font-size: 42px;
+    font-weight: 600px;
+}
+#head
+{
+    position:relative;
+}
+.photo-img
+{
+    border: 3px solid black;
+}
+#wrapper
+{
+    margin: 40px auto 40px auto;
+    max-width: 980px;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.75);
+    box-shadow: 0 0 10px rgba(0,0,0,0.75);
+
+}
+#photo
+{
+    padding:15px;
+}
+
+.bright-side
+{
+    background-color: #ffffff;
+    color:#1c1c1c;
+    padding: 2px 0px 2px 5px;
+
+}
+
+.bright-side>hr
+{
+    border: #1c1c1c;
+    margin:5px 0px 3px 0px;
+}
+
+.dark-side
+{
+    background-color: #252525;
+    color:#fdfdfd;
+    padding: 2px 5px 2px 0px;
+}
+.dark-side>hr
+{
+    border: #fdfdfd;
+    margin:5px 0px 3px 0px;
+}
