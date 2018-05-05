@@ -77,3 +77,12 @@ body
     border: #fdfdfd;
     margin:5px 0px 3px 0px;
 }
+
+
+@media (max-width: 768px) 
+{
+    #cv-head
+    {
+        text-align: center;
+    }
+}
