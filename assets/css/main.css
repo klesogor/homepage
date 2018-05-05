@@ -58,6 +58,7 @@ body
 
 .bright-side hr
 {
+    background-color: #1c1c1c;
     border: 2px solid #1c1c1c;
     margin:5px 0px 3px 0px;
 }
@@ -70,6 +71,7 @@ body
 }
 .dark-side hr
 {
+    background-color: #fdfdfd;
     border: 2px solid #fdfdfd;
     margin:5px 0px 3px 0px;
 }
@@ -131,6 +133,14 @@ body
     content: "";
     display: table;
     clear: both;
+}
+
+.about
+{
+    font-size: 20px !important;
+    font-style: none !important;
+    font-weight: 500px;
+    padding: 5px;
 }
 
 
