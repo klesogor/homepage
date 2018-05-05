@@ -1,0 +1,181 @@
+
+@font-face {
+    font-family: base;
+    src: url("assets/fonts/palanquindark-regular.ttf");
+}
+
+@font-face {
+    font-family: bold;
+    src: url("assets/fonts/palanquin-bold.ttf");
+}
+body
+{
+    font-size: 18px;
+    background-color: #e6e6ee;
+}
+.photo-wrap
+{
+    max-width: 250px;
+    max-height: 250px;
+    margin: auto;
+}
+#cv-head
+{
+    width: 80%;
+    text-align: left;
+    margin:30px auto 30px auto;
+    font-size: 42px;
+    font-weight: 600px;
+}
+#head
+{
+    position:relative;
+}
+.photo-img
+{
+    border: 3px solid black;
+}
+#wrapper
+{
+    margin: 15px auto 15px auto;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.75);
+    box-shadow: 0 0 10px rgba(0,0,0,0.75);
+
+}
+#photo
+{
+    padding:15px;
+}
+
+.bright-side
+{
+    background-color: #ffffff;
+    color:#1c1c1c;
+    padding: 2px 0px 2px 40px;
+
+}
+
+.bright-side hr
+{
+    background-color: #1c1c1c;
+    border: 2px solid #1c1c1c;
+    margin:5px 0px 3px 0px;
+}
+
+.dark-side
+{
+    background-color: #252525;
+    color:#fdfdfd;
+    padding: 2px 0px 2px 0px;
+}
+.dark-side hr
+{
+    background-color: #fdfdfd;
+    border: 2px solid #fdfdfd;
+    margin:5px 0px 3px 0px;
+}
+.info
+{
+    margin-top:20px;
+    font-weight: 700;
+    font-size:20px;
+}
+
+.info-block
+{
+    margin-top:10px;
+    font-size: 1em;
+}
+
+.data-row
+{
+    min-height:60px;
+}
+.timeline
+{
+    margin-left:5px;
+    box-sizing: border-box;
+}
+.timeline-block
+{
+    float:left;
+    padding-left:3px; 
+    max-width:90%;
+}
+.timeline-block-image
+{
+    float:left;
+    background-image: url('/assets/img/tl.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-height: 100px;
+    min-width:40px;
+    background-size: cover;
+}
+.header-main{
+    font-style: italic;
+    font-weight: 600;
+}
+.text-main
+{
+    font-style: italic;
+}
+.timeline-row
+{
+    width: 100%;
+    overflow: hidden;
+    padding:0px;
+    margin: 0px;  
+}
+.timeline-row:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.about
+{
+    font-size: 20px !important;
+    font-style: none !important;
+    font-weight: 500px;
+    padding: 5px;
+}
+
+.main-skill
+{
+    padding:5px 20px 5px 5px;
+    border-right: #fdfdfd dashed 2px;
+    margin-right: -10px;
+}
+.addit-skill
+{
+    border: none;
+    padding:5px 10px 5px 5px;
+    border-right:none;
+    padding-bottom:20px; 
+}
+
+@media (max-width: 768px) 
+{
+    #cv-head
+    {
+        text-align: center;
+    }
+    .main-skill
+    {
+        border: none;
+    }
+    .addit-skill
+    {
+        margin-right: 0px;
+    }
+}
+@media (max-width: 452px) 
+{
+   .timeline-block-image
+    {
+        display:none;
+    }
+}
