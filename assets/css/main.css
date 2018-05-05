@@ -1,13 +1,4 @@
 
-@font-face {
-    font-family: base;
-    src: url("assets/fonts/palanquindark-regular.ttf");
-}
-
-@font-face {
-    font-family: bold;
-    src: url("assets/fonts/palanquin-bold.ttf");
-}
 body
 {
     font-size: 18px;
@@ -106,7 +97,7 @@ body
 .timeline-block-image
 {
     float:left;
-    background-image: url('/assets/img/tl.png');
+    background-image: url('assets/img/tl.png');
     background-position: center top;
     background-repeat: no-repeat;
     min-height: 100px;
