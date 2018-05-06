@@ -3,7 +3,30 @@ footer
      margin:10px 0px 10px 0px;
      text-align:center;
      font-size:1.3 em;
-     min-width: 20px
+     min-height: 20px;
+     background-color: #252525;
+}
+.likeblock
+{
+    text-align:center;
+    margin:0px;
+    padding: 10px;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+.likeblock:hover
+{
+    background-color:rgba(253, 253, 253, 0.6);
+}
+.likeblock>span
+{
+    display: block;
+}
+a:hover
+{
+    text-decoration: none;
 }
 body
 {
@@ -31,6 +54,10 @@ body
 .photo-img
 {
     border: 3px solid black;
+}
+.expand
+{
+    cursor: pointer;
 }
 #wrapper
 {
@@ -93,7 +120,7 @@ body
 
 .data-row
 {
-    padding-left:10px; 
+    padding-left:10px;  
 }
 .timeline
 {
