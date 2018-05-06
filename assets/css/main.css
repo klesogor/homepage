@@ -42,7 +42,8 @@ body
 {
     background-color: #ffffff;
     color:#1c1c1c;
-    padding: 2px 0px 2px 40px;
+    padding: 2px 0px 2px 0px;
+    margin-left:0px;
 
 }
 
@@ -70,6 +71,7 @@ body
     margin-top:20px;
     font-weight: 700;
     font-size:20px;
+    min-height:0px !important;
 }
 
 .info-block
@@ -78,14 +80,20 @@ body
     font-size: 1em;
 }
 
+.icon
+{
+    text-align:center;
+}
+
 .data-row
 {
-    min-height:60px;
+    padding-left:10px; 
 }
 .timeline
 {
     margin-left:5px;
     box-sizing: border-box;
+    text-align: left;
 }
 .timeline-block
 {
@@ -104,12 +112,20 @@ body
     background-size: cover;
 }
 .header-main{
+    font-size: 1.3em;
     font-style: italic;
     font-weight: 600;
+    padding: 0px 5px 0px 5px;    
+}
+.skill-header
+{
+    padding: 0px 5px 0px 5px;
+    font-style: normal;
 }
 .text-main
 {
-    font-style: italic;
+    font-style: normal;
+    padding: 0px 5px 0px 5px;
 }
 .timeline-row
 {
@@ -127,42 +143,63 @@ body
 
 .about
 {
-    font-size: 20px;
+    font-size: 1em;
     font-style: normal;
-    font-weight: 500;
-    padding: 5px;
+    padding: 10px;
+    text-align: left;
 }
 
 .main-skill
 {
-    padding:5px 20px 5px 5px;
+    padding:5px 20px 5px 20px;
 }
 .addit-skill
 {
     border: none;
     margin-left: -20px;
-    padding:5px 10px 5px 20px;
+    padding:5px 20px 5px 20px;
     border-right:none;
     border-left: #fdfdfd dashed 2px;
 }
 
 @media (max-width: 768px) 
 {
+    .about
+    {
+        padding-left: 20px;
+        padding-bottom: 0px;
+    }
+    body
+    {
+        font-size: 14px;
+        padding:3px 20px 3px 20px;
+        text-align: center;
+    }
     #cv-head
     {
         text-align: center;
     }
     .addit-skill
     {
-        padding:5px 10px 5px 5px;
+        padding:5px 20px 5px 20px;
         margin-left: 0px;
         border: none;
+        text-align: left;
     }
-}
-@media (max-width: 452px) 
-{
+    .main-skill
+    {
+        text-align: left;
+    }
+    .data-row
+    {
+        padding-left:0px;
+    }
    .timeline-block-image
     {
         display:none;
+    }
+    .timeline-block
+    {
+        padding-left:20px;
     }
 }
