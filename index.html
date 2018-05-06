@@ -459,7 +459,7 @@
     });
     $(document).ready(function()
     {
-    var likeClosed = true;
+    var likeClosed = false;
     let likes = 3;
     let atime = 1000;
     let fadeInLikes = (id,open,time) =>{
@@ -480,7 +480,6 @@
       }
       likeClosed = !likeClosed;
     });
-    fadeInLikes(likes,false,0);
     });
     </script>
   </body>
