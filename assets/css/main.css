@@ -3,6 +3,7 @@ footer
      margin:10px 0px 10px 0px;
      text-align:center;
      font-size:1.3 em;
+     min-width: 20px
 }
 body
 {
