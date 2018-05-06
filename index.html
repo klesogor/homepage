@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lesohorskyi Kirill — Résumé</title>
-    <!--<base href = "https://klesogor.github.io/homepage/">!-->
+    <base href = "https://klesogor.github.io/homepage/">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="icon" href="assets/img/CV.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -30,9 +31,10 @@
       </div>
       <div class="row" id="main-content">
         <div class="col-lg-4 col-md-4 col-xs-12 bright-side">
-            <div class="info data-row">
+            <div class="info data-row expand" id="aboutme">
               INFO
             </div>
+            <div id = "aboutme-toggle">
             <hr>
             <div class="info-block row data-row">
               <div class="col-lg-4 col-xs-12 col-md-4 col-sm-12 icon">
@@ -40,7 +42,7 @@
               </div>
               <div class="col-lg-8 col-xs-12 col-md-8 col-sm-12">
                 <div class="header-main">
-                  Name
+                  Name 
                 </div>
                 <div class="text-main">
                   Lesohorskyi Kirill
@@ -100,9 +102,11 @@
                     </div>
                   </div>
               </div>
-              <div class="info data-row">
+              </div>
+              <div class="info data-row  expand" id="contacts">
                   CONTACTS
                 </div>
+                <div id = "contacts-toggle">
                 <hr>
                 <div class="info-block row data-row" >
                     <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12 icon">
@@ -156,9 +160,11 @@
                       </div>
                     </div>
                 </div>
-                <div class="info data-row">
+                </div>
+                <div class="info data-row  expand" id="expirience">
                   EXPERIENCE
                 </div>
+                <div id="expirience-toggle">
                 <hr>
                 <div class="info-block row data-row">
                   <div class="col-lg-4 col-xs-12 col-md-4 col-sm-12 icon">
@@ -173,14 +179,28 @@
                     </div>
                   </div>
                 </div>
+                <div class="info-block row data-row">
+                    <div class="col-lg-4 col-xs-12 col-md-4 col-sm-12 icon">
+                      <i class="fab fa-windows" style="font-size:2.5em"></i>
+                    </div>
+                    <div class="col-lg-8 col-xs-12 col-md-8 col-sm-12">
+                      <div class="header-main">
+                        04.2017 - C#/WCF
+                      </div>
+                      <div class="text-main">
+                        Developing basic messanger
+                      </div>
+                    </div>
+                  </div>
+                </div>
         </div>
         <div class="col-lg-8 col-md-8 col-xs-12 dark-side">
-            <div class="info" style="padding-left: 5px;">
+            <div class="info expand" id ="timeline" style="padding-left: 5px;">
                 <i class="far fa-clock" style="font-size:1em"></i>
                 TIME LINE
             </div>
             <hr>
-            <div class="timeline">
+            <div class="timeline" id="timeline-exp">
               <div class="timeline-row">
                 <div class="timeline-block-image"></div>
                 <div class="timeline-block">
@@ -240,12 +260,12 @@
                   </div>
               </div>
             </div>
-            <div class="info" style="padding-left: 5px;">
+            <div class="info expand" style="padding-left: 5px;" id = "about">
                 <i class="fas fa-user-secret" style="font-size:1em"></i>
                 ABOUT ME
             </div>
             <hr>
-            <div class="text-main about">
+            <div class="text-main about" id="about-exp">
               I was born on 03.07.1999 in the city of Donetsk.
               Recently moved to Kiev.
               Creative, motivated and skilled programmer. Good communication and teamworking skills.
@@ -253,14 +273,14 @@
               and SOLID.<br>
               Basic knowledge of JavaScript, TSQL, WebPack, NoSQL(Redis), VCS(git and mercurial), Photoshop.
             </div>
-            <div class="info" style="padding-left: 5px;">
+            <div class="info expand" style="padding-left: 5px;" id = "skill">
                 <i class="fas fa-wrench" style="font-size:1em"></i>
                 SKILLS
             </div>
             <hr>
-            <div class="additional-info">
+            <div class="additional-info" id="skill-exp">
               <div class="row">
-                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12" style="">
                   <div class="header-main" style="text-align: center;">
                     CORE SKILLS
                   </div>
@@ -291,7 +311,7 @@
                    </div>
                   </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 border-left">
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
                 <div class="header-main" style="text-align: center;">
                     OTHER SKILLS 
                   </div>
@@ -330,11 +350,157 @@
                 </div>
               </div>
             </div>
+            <!--Things I like -->
+            <div class="info expand" id="like" style="padding-left: 5px;">
+                <i class="far fa-thumbs-up" style="font-size:1em"></i>
+                THINGS I LIKE
+            </div>
+            <hr id="divhr">
+            <div id = "like-0">
+            <div class="row">
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 likeblock">
+                  <span>
+                      <i class="fas fa-archive" style="font-size:1.5em"></i>
+                  </span>
+                  <span>
+                    Acomplishing hard job
+                  </span>
+                  </div>
+                <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 likeblock">
+                      <span>
+                          <i class="fas fa-hands-helping" style="font-size:1.5em"></i>
+                      </span>
+                      <span>
+                        Working in team
+                      </span>
+              </div>
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 likeblock">
+                <span>
+                    <i class="fas fa-book" style="font-size:1.5em"></i>
+                </span>
+                <span>
+                  Learning new stuff
+                </span>
+        </div>
+            </div>
+          </div>
+            <div class="row" id="like-1">
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 likeblock">
+                  <span>
+                      <i class="fas fa-sun" style="font-size:1.5em"></i>
+                  </span>
+                  <span>
+                    Spending time exposed to sunlight
+                  </span>
+                  </div>
+                <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 likeblock">
+                      <span>
+                          <i class="fas fa-music" style="font-size:1.5em"></i>
+                      </span>
+                      <span>
+                        Listening to piano music
+                      </span>
+              </div>
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 likeblock">
+                <span>
+                    <i class="fas fa-wrench" style="font-size:1.5em"></i>
+                </span>
+                <span>
+                  Getting non-IT skills
+                </span>
+        </div>
+            </div>
+            <div class="row" id="like-2">
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 likeblock">
+                  <span>
+                      <i class="fas fa-building" style="font-size:1.5em"></i>
+                  </span>
+                  <span>
+                    Working in office
+                  </span>
+                  </div>
+                <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 likeblock" >
+                      <span>
+                          <i class="fas fa-microphone" style="font-size:1.5em"></i>
+                      </span>
+                      <span>
+                        Visiting conferentions
+                      </span>
+              </div>
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 likeblock">
+                <span>
+                    <i class="fab fa-angellist" style="font-size:1.5em"></i>
+                </span>
+                <span>
+                    Getting job done
+                </span>
+        </div>
+            </div>
             <footer>
-                
             </footer>
+            </div>
       </div>
     </div>
     </div>
+
+    <script>
+      $(document).ready(function(){
+        $("#aboutme-toggle").slideUp(0);
+        $("#contacts-toggle").slideUp(0);
+        $("#expirience-toggle").slideUp(0);
+        $("#skill-exp").slideUp(0);
+        $("#about-exp").slideUp(0);
+        $("#timeline-exp").slideUp(0);
+
+          $("#aboutme").click(function(){
+            $("#aboutme-toggle").slideToggle(600);
+          })
+
+          $("#skill").click(function(){
+            $("#skill-exp").slideToggle(600);
+          })
+
+           $("#timeline").click(function(){
+            $("#timeline-exp").slideToggle(600);
+          })
+
+          $("#about").click(function(){
+            $("#about-exp").slideToggle(600);
+          })
+
+          $("#contacts").click(function(){
+            $("#contacts-toggle").slideToggle(600);
+          })
+
+           $("#expirience").click(function(){
+            $("#expirience-toggle").slideToggle(600);
+          })
+    });
+    $(document).ready(function()
+    {
+    var likeClosed = true;
+    let likes = 3;
+    let atime = 1000;
+    let fadeInLikes = (id,open,time) =>{
+      if(id>likes||id<0){
+        return false;
+      }
+      if(open){
+        $('#like-'+id).slideDown(time,fadeInLikes(id+1,true,time));
+      } else {
+        $('#like-'+id).slideUp(time, fadeInLikes(id-1,false,time));
+      }
+    }
+    $("#like").click(function(){
+      if(likeClosed){
+        fadeInLikes(0,true,atime);
+      } else {
+        fadeInLikes(likes,false,atime);
+      }
+      likeClosed = !likeClosed;
+    });
+    fadeInLikes(likes,false,0);
+    });
+    </script>
   </body>
 </html>
