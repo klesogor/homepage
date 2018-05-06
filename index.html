@@ -31,7 +31,7 @@
       </div>
       <div class="row" id="main-content">
         <div class="col-lg-4 col-md-4 col-xs-12 bright-side">
-            <div class="info data-row expand" id="aboutme">
+            <div class="info data-row" id="aboutme">
               INFO
             </div>
             <div id = "aboutme-toggle">
@@ -195,7 +195,7 @@
                 </div>
         </div>
         <div class="col-lg-8 col-md-8 col-xs-12 dark-side">
-            <div class="info expand" id ="timeline" style="padding-left: 5px;">
+            <div class="info" id ="timeline" style="padding-left: 5px;">
                 <i class="far fa-clock" style="font-size:1em"></i>
                 TIME LINE
             </div>
@@ -260,7 +260,7 @@
                   </div>
               </div>
             </div>
-            <div class="info expand" style="padding-left: 5px;" id = "about">
+            <div class="info" style="padding-left: 5px;" id = "about">
                 <i class="fas fa-user-secret" style="font-size:1em"></i>
                 ABOUT ME
             </div>
@@ -445,36 +445,20 @@
 
     <script>
       $(document).ready(function(){
-        $("#aboutme-toggle").slideUp(0);
         $("#contacts-toggle").slideUp(0);
         $("#expirience-toggle").slideUp(0);
         $("#skill-exp").slideUp(0);
-        $("#about-exp").slideUp(0);
-        $("#timeline-exp").slideUp(0);
-
-          $("#aboutme").click(function(){
-            $("#aboutme-toggle").slideToggle(600);
-          })
-
           $("#skill").click(function(){
             $("#skill-exp").slideToggle(600);
-          })
-
-           $("#timeline").click(function(){
-            $("#timeline-exp").slideToggle(600);
-          })
-
-          $("#about").click(function(){
-            $("#about-exp").slideToggle(600);
-          })
+          });
 
           $("#contacts").click(function(){
             $("#contacts-toggle").slideToggle(600);
-          })
+          });
 
            $("#expirience").click(function(){
             $("#expirience-toggle").slideToggle(600);
-          })
+          });
     });
     $(document).ready(function()
     {
